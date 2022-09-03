@@ -1,4 +1,4 @@
-SIII.2
+SIII ex 2
 
 #include <iostream>
 
@@ -28,7 +28,7 @@ int main()
 }
 
 
-SIII.3
+SIII ex 3
 
   #include <iostream>
 #include <fstream>
