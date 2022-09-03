@@ -1,4 +1,4 @@
-S II.3
+SII ex 3
 #include <iostream>
 
 using namespace std;
