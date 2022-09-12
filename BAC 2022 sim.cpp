@@ -40,3 +40,26 @@ int main() {
     cout << "NU";
   }
 }
+
+III.3
+  #include <iostream>
+using namespace std;
+
+int main() {
+  int n, p, i, y, k, suma = 0;
+  cin >> n;
+  for (i = 3; i <= n; i = i + 3) {
+    y = i;
+    k = 0; /// k=exponentul lui 3 in desc in factori primi a lui y
+    while (y % 3 == 0) {
+      k++;
+      y = y / 3;
+    }
+    suma = suma + k;
+  }
+  if (suma % 2 == 1) {
+    suma = suma - 1;
+  }
+  p = suma / 2;
+  cout << p;
+}
