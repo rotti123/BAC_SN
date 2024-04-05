@@ -59,36 +59,31 @@ cout << cod2 << " " << suma/pret2 << endl;
 
 SIII.
 1.
-#include <iostream>
-using namespace std;
-int main()
-{
-    int n, k;
-    cin >> n;
-    int rap, s = 0, rapx;
-    for (int d = 1; d <= n; d++)
-    {
-        if (n % d == 0)
-            s = s+d;
-    }
-    rap = s/n;
-    for (int x = 1; x <= n-1; x++)
-    {
-        s = 0;
-        for (int d = 1; d <= x; d++)
-        {
-            if (x % d == 0)
-                s = s+d;
-        }
-        rapx = s/x;
-        if (rapx > rap)
-        {
-            cout << 0;
-            return 0;
-        }
-    }
-    cout << 1;
-}
+ citeşte n; ok<-0;
+ s<-0;
+┌pentru d<-1, n execută
+│┌dacă n%d=0 atunci
+││  s<-s+d;
+│└■
+└■
+ nap<-[s/n];
+┌pentru x<-1, n-1 execută
+│ s<-0;
+│ ┌pentru d<-1, x execută
+│ │┌dacă x%d=0 atunci
+│ ││ s<-s+d;	
+│ │└■
+│ └■
+│  rapx<-[s/d];
+│┌dacă rapx > rap atunci
+││ ok<-1;
+│└■
+└■
+┌dacă ok=1 atunci
+│  scrie 0
+└altfel
+   scrie 1
+
 
 2.
 #include <iostream>
